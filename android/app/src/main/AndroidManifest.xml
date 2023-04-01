@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.memorifynew">
+    package="com.aizazhaider.instagram_flutter">
    <application
-        android:label="memorifynew"
+        android:label="Instagram"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
