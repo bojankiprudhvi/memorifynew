@@ -97,14 +97,9 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 child: Container(),
               ),
               // Svg Image
-              SvgPicture.asset(
-                "assets/ic_instagram.svg",
-                height: 64,
-                colorFilter: const ColorFilter.mode(
-                  primaryColor,
-                  BlendMode.srcIn,
+              Image.asset("assets/ic_instagram.png",
+                height: 100,
                 ),
-              ),
               Flexible(
                 flex: 1,
                 child: Container(),

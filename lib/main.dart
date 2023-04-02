@@ -14,26 +14,10 @@ import 'dart:developer' as devtools show log;
 import 'package:provider/provider.dart';
 
 void main() async {
-  if (kIsWeb) {
-    WidgetsFlutterBinding.ensureInitialized();
-    await Firebase.initializeApp(
-      options: const FirebaseOptions(
-        apiKey: "AIzaSyB_fhLxujGM303qUf4uTEYEL7zIeUpPm6U",
-        authDomain: "instagram-clone-ce57e.firebaseapp.com",
-        projectId: "instagram-clone-ce57e",
-        storageBucket: "instagram-clone-ce57e.appspot.com",
-        messagingSenderId: "449525375375",
-        appId: "1:449525375375:web:a9e55274432742ec476bfa",
-      ),
-    ).whenComplete(
-      () => devtools.log("Successfully Initialized For Web"),
-    );
-  } else {
     WidgetsFlutterBinding.ensureInitialized();
     await Firebase.initializeApp().whenComplete(
       () => devtools.log("Successfully Initialized For Mobile"),
     );
-  }
   runApp(const MyApp());
 }
 
@@ -50,8 +34,8 @@ class MyApp extends StatelessWidget {
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'Instagram Clone',
-        theme: ThemeData.dark().copyWith(
+        title: 'Memorify',
+        theme: ThemeData.light().copyWith(
           scaffoldBackgroundColor: mobileBackgroundColor,
         ),
         home: StreamBuilder(

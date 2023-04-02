@@ -48,12 +48,8 @@ class _WebScreenLayoutState extends State<WebScreenLayout> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: mobileBackgroundColor,
-        title: SvgPicture.asset(
-          "assets/ic_instagram.svg",
-          colorFilter: const ColorFilter.mode(
-            primaryColor,
-            BlendMode.srcIn,
-          ),
+        title:  Image.asset("assets/ic_instagram.png",
+          
           height: 32,
         ),
         actions: [
